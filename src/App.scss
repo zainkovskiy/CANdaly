@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text,
+.MuiTypography-root {
+  color: #737373;
+  font-family: "Montserrat";
+}

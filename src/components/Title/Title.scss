@@ -1,0 +1,29 @@
+.title {
+  color: #fff;
+  padding: 1rem;
+  background-color: #0c54a0;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  &__button {
+    border: 1px solid transparent;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border 0.3s, background-color 0.3s, color 0.3s;
+    user-select: none;
+    &:hover {
+      border: 1px solid #fff;
+    }
+    &:active {
+      background-color: #fff;
+      color: #0c54a0;
+    }
+  }
+}
