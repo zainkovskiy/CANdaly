@@ -12,9 +12,12 @@ export function Title({ title, buttonName, children, onClick, tooltip }) {
           {title}
           {children}
         </span>
-        <Tooltip title={tooltip}>
-          <HelpOutlineIcon sx={{ fill: '#fff' }} />
-        </Tooltip>
+        {
+          tooltip &&
+          <Tooltip title={tooltip}>
+            <HelpOutlineIcon sx={{ fill: '#fff' }} />
+          </Tooltip>
+        }
       </div>
       <span
         className='title__button'

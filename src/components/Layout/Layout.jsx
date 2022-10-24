@@ -9,6 +9,7 @@ import { Title } from 'components/Title';
 import { DulyButton } from 'components/DulyButton';
 import { Dulys } from 'components/Dulys';
 import { Days } from 'components/Days';
+import { MarketingButton } from 'components/MarketingButton';
 
 export const Layout = () => {
   const { officeName, dialog, toggleDialog } = useContext(Context);
@@ -40,7 +41,15 @@ export const Layout = () => {
         {<>{officeName}</>}
       </Title>
       <Days />
-      <ModalWindow open={Boolean(dialog)}>{getChildren()}</ModalWindow>
+      <Title
+        title='Маркетинговые кампании'
+        tooltip={false}
+      />
+      <MarketingButton/>
+      {
+        Boolean(dialog) &&
+        <ModalWindow open={Boolean(dialog)}>{getChildren()}</ModalWindow>
+      }
     </>
   );
 };
