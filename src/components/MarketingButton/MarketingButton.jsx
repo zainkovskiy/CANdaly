@@ -31,7 +31,7 @@ export const MarketingButton = () => {
             color='primary'
             checked={currentStatus}
             onChange={handleChange}
-            disabled={phone.length !== 4}
+            disabled={!currentStatus && phone.length !== 4}
             />
         }
         label='Получать звонки по маркетинговым кампаниям'
